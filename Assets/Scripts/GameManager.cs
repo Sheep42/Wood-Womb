@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour {
 			} else if(!dialogueEnd) {
 				dialogueTimer += Time.deltaTime;
 
-				if(dialogueTimer >= 5f) {
+				if(dialogueTimer >= 8f) {
 					dialogue.text = "";
 
 					dialogueEnd = true;
