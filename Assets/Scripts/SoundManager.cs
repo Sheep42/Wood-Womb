@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour {
 		efxStack = GetComponents<AudioSource>();
 
 		for(int i = 0; i < efxStack.Length; i++) {
-			if(!efxStack[i].Equals(musicSource2) && !efxStack[i].isPlaying) {
+			if(!(efxStack[i].Equals(musicSource2) || efxStack[i].Equals(musicSource)) && !efxStack[i].isPlaying) {
 				Destroy(efxStack[i]);
 			}
 		}
